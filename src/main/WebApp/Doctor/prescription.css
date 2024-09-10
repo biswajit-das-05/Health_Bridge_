@@ -72,12 +72,19 @@
     .fs-3 {
         font-size: 1.75rem;
     }
-    
-    button{
+
+    button {
+        color:#000000;
         background-color: #00ff00;
-        text-align:center;
-        transition-property: background-color;
-        transition-duration: 2s;
+        height:30px;
+        width:90px;
+        position:sticky;
+
+    }
+    
+    button:hover {
+        color:#ffffff;
+        background-color: #ff0000;
     }
 }
 
