@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<!-- User Sign Up -->
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card my-card">
+                <div class="card-header text-center text-white my-bg-color">
+                    <p class="fs-4 text-center text-white mt-2">
+                        <i class="fa fa-user-plus"></i> Sign Up
+                    </p>
+                </div>
+
+                <div class="card-body">
+                    <form action="userSignup" method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <br>
+                            <input name="name" type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <br>
+                            <input name="email" type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <br>
+                            <input name="password" type="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <br>
+                            <input name="confirm_password" type="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn col-md-12 text-white my-bg-color">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
