@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Of Doctor</title>
+  <link rel="stylesheet" href="prescription.css">
+</head>
+<body>
+    <div class="container-fluid my-bg-img p-5">
+       <!-- css background image -->
+       <p class="text-center fs-2 text-white"></p>
+   </div>
+
+    <div class="container p-3">
+         <p class="fs-2"></p>
+
+     <div class="row">
+
+
+    <!-- col-2 -->
+    <div class="col-md-6 offset-md-3">
+      <div class="card my-card">
+        <div class="card-body">
+          <p class="text-center fs-3">Leave a Treatment Comment</p>
+          <!-- boostrap form -->
+          <form class="row g-3" action="../updateStatus" method="post">
+
+            <div class="col-md-6">
+              <label class="form-label">Full Name</label>
+                <label>
+                    <input name="fullName" type="text" placeholder="Enter full name"
+                          class="form-control">
+                </label>
+
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Age</label><br>
+                <label>
+                    <input name="age" type="number" placeholder="Enter your Age" class="form-control">
+                </label>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Phone</label>
+                <label>
+                    <input name="phone" type="text" maxlength="11" placeholder="Enter Mobile no." class="form-control">
+                </label>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Diseases</label>
+                <label>
+                    <input name="diseases" type="text" placeholder="Enter diseases" class="form-control">
+                </label>
+            </div>
+
+            <div class="col-md-12">
+              <label class="form-label">Leave a Comment / Prescription</label>
+                <label>
+                    <textarea name="comment" placeholder="Leave a comment" class="form-control" rows="" cols=""></textarea>
+                </label>
+            </div>
+
+            <!-- which appointment's comment is it / comment Id -->
+            <input type="hidden" name="id" value="<%= appointment.getId()%>" class="form-control">
+
+            <!-- which doctor give a comment / doctor ID -->
+            <input type="hidden" name="doctorId" value="<%= appointment.getDoctorId()%>" class="form-control">
+
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-success col-md-12">Submit</button>
+            </div>
+          </form>
+
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd Div -->
+
+</body>
+</html>
