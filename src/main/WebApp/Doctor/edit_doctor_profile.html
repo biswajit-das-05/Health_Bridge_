@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Doctor Profile</title>
+  <link rel="stylesheet" href="edit_doctor_profile.css">
+</head>
+<body>
+    <div class="container p-4">
+       <div class="row">
+          <div class="col-md-4">
+             <div class="card my-card">
+                <div class="card-body">
+                  <p class="fs-3 text-center text-success">Change Password</p>
+                  <form action="../doctorChangePassword" method="post">
+                    <div class="mb-3">
+                      <label class="form-label">Enter New Password</label>
+                      <label>
+                        <input name="newPassword" type="password" placeholder="Enter new password" class="form-control" required="required">
+                      </label>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Enter Old Password</label>
+                      <label>
+                        <input name="oldPassword" type="password" placeholder="Enter old password" class="form-control" required>
+                      </label>
+                    </div>
+
+                    <input type="hidden" value="${doctorObj.id}" name="doctorId">
+
+                    <button type="submit" class="btn btn-success col-md-12">Change Password</button>
+                  </form>
+                  <!-- doctor change password form -->
+                </div>
+             </div>
+
+          </div>
+
+         <!-- doctor edit -->
+
+         <div class="col-md-6  offset-md-2">
+           <div class="card my-card">
+
+             <div class="card-body">
+               <p class="fs-3 text-center text-success">Edit Doctor Profile</p>
+               <form action="../doctorEditProfile" method="post">
+                 <div class="mb-3">
+                   <label class="form-label">Full Name</label>
+                   <label>
+                     <input name="fullName" type="text" placeholder="Enter full name" class="form-control">
+                   </label>
+                 </div>
+
+                 <div class="mb-3">
+                   <label class="form-label">Date of Birth</label>
+                   <label>
+                     <input name="dateOfBirth" type="date" placeholder="Enter DOB" class="form-control">
+                   </label>
+                 </div>
+
+                 <div class="mb-3">
+                   <label class="form-label">Qualification</label>
+                   <label>
+                     <input name="qualification" type="text" placeholder="Enter qualification" class="form-control">
+                   </label>
+                 </div>
+
+                 <div class="mb-3">
+                   <label class="form-label">Specialist</label>
+                   <label>
+                     <select class="form-control" name="specialist"></select>
+                   </label>
+                 </div>
+
+                 <div class="mb-3">
+                   <label class="form-label">Email address</label>
+                   <label>
+                     <input name="email" type="email" placeholder="Enter Email" class="form-control">
+                   </label>
+                 </div>
+
+                 <div class="mb-3">
+                   <label class="form-label">Phone</label>
+                   <label>
+                     <input name="phone" type="text" placeholder="Enter mobile number" class="form-control">
+                   </label>
+                 </div>
+
+                 <input type="hidden" value="${doctorObj.id}" name="doctorId">
+
+
+                 <button type="submit" class="btn btn-success text-white col-md-12">Update</button>
+               </form>
+             </div>
+           </div>
+         </div>
+
+         <!-- doctor edit -->
+       </div>
+    </div>
+
+</body>
+</html>
