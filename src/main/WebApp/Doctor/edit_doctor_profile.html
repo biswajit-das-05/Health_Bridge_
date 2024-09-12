@@ -9,6 +9,7 @@
 <body>
     <div class="container p-4">
        <div class="row">
+         <div class="box1">
           <div class="col-md-4">
              <div class="card my-card">
                 <div class="card-body">
@@ -17,32 +18,29 @@
                     <div class="mb-3">
                       <label class="form-label">Enter New Password</label>
                       <label>
-                        <input name="newPassword" type="password" placeholder="Enter new password" class="form-control" required="required">
+                        <input name="newPassword" type="password" placeholder="Enter new password" class="form-control">
                       </label>
                     </div>
 
                     <div class="mb-3">
                       <label class="form-label">Enter Old Password</label>
                       <label>
-                        <input name="oldPassword" type="password" placeholder="Enter old password" class="form-control" required>
+                        <input name="oldPassword" type="password" placeholder="Enter old password" class="form-control">
                       </label>
                     </div>
-
-                    <input type="hidden" value="${doctorObj.id}" name="doctorId">
 
                     <button type="submit" class="btn btn-success col-md-12">Change Password</button>
                   </form>
                   <!-- doctor change password form -->
                 </div>
              </div>
-
           </div>
+         </div>
 
          <!-- doctor edit -->
 
-         <div class="col-md-6  offset-md-2">
+         <div class="box2">
            <div class="card my-card">
-
              <div class="card-body">
                <p class="fs-3 text-center text-success">Edit Doctor Profile</p>
                <form action="../doctorEditProfile" method="post">
@@ -70,7 +68,20 @@
                  <div class="mb-3">
                    <label class="form-label">Specialist</label>
                    <label>
-                     <select class="form-control" name="specialist"></select>
+                     <select class="form-control" name="specialist">
+                         <option disabled="disabled" selected="selected">---Select---</option>
+                         <option value="Cardiologist">Cardiologist</option>
+                         <option value="Dermatologist">Dermatologist</option>
+                         <option value="Neurologist">Neurologist</option>
+                         <option value="Pediatrician">Pediatrician</option>
+                         <option value="Orthopedic">Orthopedic</option>
+                         <option value="General Surgeon">General Surgeon</option>
+                         <option value="Psychiatrist">Psychiatrist</option>
+                         <option value="Gynecologist">Gynecologist</option>
+                         <option value="Oncologist">Oncologist</option>
+                         <option value="Radiologist">Radiologist</option>
+                         <option value="Ophthalmologist">Ophthalmologist</option>
+                       </select>
                    </label>
                  </div>
 
@@ -87,9 +98,6 @@
                      <input name="phone" type="text" placeholder="Enter mobile number" class="form-control">
                    </label>
                  </div>
-
-                 <input type="hidden" value="${doctorObj.id}" name="doctorId">
-
 
                  <button type="submit" class="btn btn-success text-white col-md-12">Update</button>
                </form>

@@ -1,20 +1,37 @@
 *{
     body {
         font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
         margin: 0;
         padding: 0;
     }
 
     .container-fluid {
-        padding: 20px;
+        padding: 10px;
     }
 
-    .my-card {
-        box-shadow: 0px 0px 10px 1px rgb(35, 163, 142);
-        border-radius: 8px;
-        background-color: #f9f8f9;
+    .row {
+        display: flex;
+        justify-content: flex-end;
     }
+
+ 
+
+    .box1{
+        height:305px;
+        width:500px;
+        background-color: #ffff00;
+        border: 4px dashed #ff0000;
+        margin: 85px 95px 100px 100px;
+    }
+
+    .box2{
+        height:610px;
+        width:600px;
+        background-color: #ffff00;
+        border: 4px dashed #ff0000;
+        margin: 85px 100px 100px 95px;
+    }
+
 
     .card-body {
         padding: 20px;
@@ -24,11 +41,10 @@
     }
 
    button{
-       height:23px;
-       width:128px;
+       height:29px;
+       width:420px;
        background-color: #ff00ff;
-       radius:20px;
-
+       border-radius:8px;
    }
     
     button:hover {
@@ -46,16 +62,12 @@
         padding: 10px;
         font-size: 16px;
         border-radius: 4px;
-        border: 1px solid #170f41;
+        border: 2px solid #170f41;
         margin-bottom: 15px;
         width: 100%;
         max-width: 400px;
     }
 
-    .form-control:focus {
-        border-color: #385e88;
-        box-shadow: 0 0 5px rgba(202, 115, 115, 0.3);
-    }
 
     .fs-3 {
         font-size: 1.75rem;
