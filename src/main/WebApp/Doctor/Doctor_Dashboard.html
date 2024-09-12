@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="DoctorDashboard.css">
+</head>
+<body>
+<header>
+    <div class="header-title">
+        <h1>Doctor Dashboard</h1>
+    </div>
+    <div class="editProfile-btn">
+        <button onclick="editProfile()">Edit Profile</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<script>
+    function editProfile() {
+        window.location.href = 'edit_doctor_profile.html';
+    }
+
+    function logout() {
+        window.location.href = '../WEB-INF/Landing_page.html';
+    }
+</script>
+<main>
+    <div class="dashboard-container">
+        <div class="dashboard-box" onclick="redirectTo('doctor.html')">
+            <div class="icon"><i class="fa fa-user-md"></i></div>
+            <div class="content">
+                <h2>Doctor</h2>
+                <p>10</p>
+            </div>
+        </div>
+
+        <div class="dashboard-box" onclick="redirectTo('appointments.html')">
+            <div class="icon"><i class="fa fa-calendar-check-o"></i></div>
+            <div class="content">
+                <h2>Total Appointments</h2>
+                <p>2</p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

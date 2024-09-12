@@ -1,4 +1,4 @@
-/* General styles for the page */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -6,25 +6,25 @@ body {
     padding: 0;
 }
 
-/* Container padding */
+
 .container {
     padding: 20px;
 }
 
-/* Custom card styling */
+
 .my-card {
-    box-shadow: 0px 0px 10px 1px maroon; /* Card shadow with maroon color */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #ffffff; /* White background for cards */
-    margin-bottom: 20px; /* Space between cards */
+    box-shadow: 0px 0px 10px 1px maroon;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
 }
 
-/* Card body padding */
+
 .card-body {
     padding: 20px;
 }
 
-/* Text styles */
+
 .text-center {
     text-align: center;
 }
@@ -41,13 +41,12 @@ body {
     font-size: 1.5rem;
 }
 
-/* Icon styling */
 .fa-3x {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-/* Modal styles */
+
 .modal-header {
     background-color: #f8f9fa;
     border-bottom: none;
@@ -99,7 +98,7 @@ body {
     opacity: 1;
 }
 
-/* Button styling */
+
 .btn-secondary {
     background-color: #6c757d;
     border-color: #6c757d;
@@ -113,4 +112,17 @@ body {
 
 .btn {
     cursor: pointer;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.my-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.my-card:hover {
+    transform: scale(1.05);
 }
