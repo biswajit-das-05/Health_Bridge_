@@ -1,10 +1,80 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .my-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .my-bg-color {
+            background-color: #007bff;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-decoration-none {
+            text-decoration: none;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+
+        .p-5 {
+            padding: 3rem;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -48,6 +118,7 @@
         </div>
     </div>
 </div>
+<!-- End of User Sign Up -->
 
 </body>
 </html>
