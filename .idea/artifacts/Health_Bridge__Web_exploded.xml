@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Health_Bridge_:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Health_Bridge__Web_exploded/WEB-INF</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Health_Bridge_/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Health_Bridge_" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

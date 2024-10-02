@@ -7,6 +7,8 @@
     <groupId>org.example</groupId>
     <artifactId>Health_Bridge_</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
+    
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
